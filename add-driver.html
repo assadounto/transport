@@ -1,0 +1,43 @@
+<!-- add-driver.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Add Driver - Admin Dashboard</title>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans">
+
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl">Employee Transport Management System</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto flex-1">
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-6">Add Driver</h2>
+            
+            <form id="addDriverForm" class="space-y-4">
+                <div class="flex space-x-4">
+                    <label for="driverName">Driver Name:</label>
+                    <input type="text" id="driverName" name="driverName" required>
+                </div>
+                <div class="flex space-x-4">
+                    <label for="licenseNumber">License Number:</label>
+                    <input type="text" id="licenseNumber" name="licenseNumber" required>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add Driver</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-gray-500 text-white">
+        <p>&copy; 2024 Employee Transport Management System</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="add-driver.js"></script>
+</body>
+</html>

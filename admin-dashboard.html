@@ -1,0 +1,58 @@
+<!-- admin-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Admin Dashboard - Employee Transport Management System</title>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans">
+
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl">Employee Transport Management System</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto flex-1 mt-8">
+        <h2 class="text-2xl font-bold mb-6">Admin Dashboard</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: View Bookings -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-bold mb-4">View Bookings</h3>
+                <p class="text-gray-600">View and manage employee bookings.</p>
+                <a href="view-bookings.html" class="text-blue-500 mt-4 inline-block">Go to View Bookings</a>
+            </div>
+
+            <!-- Card 2: Manage Time Slot -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-bold mb-4">Manage Time Slot</h3>
+                <p class="text-gray-600">Manage pick-up and drop-off time slots.</p>
+                <a href="manage-time-slot.html" class="text-blue-500 mt-4 inline-block">Go to Manage Time Slot</a>
+            </div>
+
+            <!-- Card 3: Add Driver -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-bold mb-4">Add Driver</h3>
+                <p class="text-gray-600">Add new drivers to the system.</p>
+                <a href="add-driver.html" class="text-blue-500 mt-4 inline-block">Go to Add Driver</a>
+            </div>
+
+            <!-- Card 4: Add Vehicle -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-bold mb-4">Add Vehicle</h3>
+                <p class="text-gray-600">Add new vehicles to the system.</p>
+                <a href="add-vehicle.html" class="text-blue-500 mt-4 inline-block">Go to Add Vehicle</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-gray-500 text-white mt-auto">
+        <p>&copy; 2024 Employee Transport Management System</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

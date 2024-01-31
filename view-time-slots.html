@@ -1,0 +1,62 @@
+<!-- view-time-slots.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <title>Employee Dashboard</title>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans">
+
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl">Employee Transport Management System</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto flex-1">
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-6">Available Time Slots</h2>
+
+            <!-- Display available time slots here -->
+            <div id="timeSlotsList" class="space-y-4">
+                <!-- Placeholder for dynamically added time slot details -->
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <p class="text-lg font-semibold">Time Slot 1</p>
+                    <p class="text-gray-500">8:00 AM - 9:00 AM</p>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <p class="text-lg font-semibold">Time Slot 2</p>
+                    <p class="text-gray-500">10:00 AM - 11:00 AM</p>
+                </div>
+                <!-- Add more time slots dynamically using JavaScript -->
+            </div>
+
+            <!-- Employee can select a time slot using a form -->
+            <form id="selectTimeSlotForm" class="space-y-4 mt-8">
+                <div class="flex space-x-4">
+                    <label for="selectedTimeSlot">Select Time Slot:</label>
+                    <!-- Populate this select box with available time slots -->
+                    <select id="selectedTimeSlot" name="selectedTimeSlot" required class="border p-2 rounded-md">
+                        <!-- Options will be dynamically added here -->
+                        <option value="1">Time Slot 1</option>
+                        <option value="2">Time Slot 2</option>
+                        <!-- Add more options dynamically using JavaScript -->
+                    </select>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Select Time Slot</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-gray-500 text-white">
+        <p>&copy; 2024 Employee Transport Management System</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="view-time-slots.js"></script>
+</body>
+</html>

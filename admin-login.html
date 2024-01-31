@@ -1,0 +1,43 @@
+<!-- admin-login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Admin Login - Employee Transport Management System</title>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans">
+
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl">Employee Transport Management System</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto mt-[100px] flex-1">
+        <div class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
+            <h2 class="text-2xl font-bold mb-6">Admin Login</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username:</label>
+                    <input type="text" id="username" name="username" class="border rounded w-full py-2 px-3" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+                    <input type="password" id="password" name="password" class="border rounded w-full py-2 px-3" required>
+                </div>
+                <a href="admin-dashboard.html" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">Login</a>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-gray-500 text-white">
+        <p>&copy; 2024 Employee Transport Management System</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
